@@ -1,8 +1,8 @@
-StudyTrack
+STUDYTRACK
 
 A simple study task manager web app built with vanilla HTML, CSS, and JavaScript.
 
- What It Does
+ WHAT IT DOES 
 
 StudyTrack lets you add, track, and manage your study tasks across sessions. You can:
 - Add tasks with a title, subject, deadline, priority level, and optional notes
@@ -13,13 +13,13 @@ StudyTrack lets you add, track, and manage your study tasks across sessions. You
 
 All data is stored in `localStorage`, so nothing leaves your browser and no server is needed
 
- Technologies Used
+TECHNOLOGY USED
 
-html
-css
+HTML
+CSS
 JavaScript
 
- How to Run
+ HOW TO RUN
 
 No build step needed. Just open `index.html` in any modern browser.
 
@@ -27,16 +27,16 @@ If you're using VS Code, the **Live Server** extension makes this easy.
 
 
 
- Known Issues / Limitations
+ Known Issues / limitations
 
 - Data lives only in the browser — clearing site data will delete everything
 - No user accounts or syncing between devices
 - No drag-and-drop for reordering tasks (could add in future)
 - Dates are stored as strings (YYYY-MM-DD) so sorting by deadline is basic
 
-Future Ideas
+FUTURE IDEAS
 
-- Add categories/tags beyond just subject
+- Add categories/tag beyond just subject
 - Reminders or notifications for upcoming deadlines
 - Export tasks to CSV
 
