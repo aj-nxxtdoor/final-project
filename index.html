@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="StudyTrack - Your personal study task manager">
+    <title>StudyTrack | Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">StudyTrack</div>
+        <nav>
+            <a href="index.html" class="active">Dashboard</a>
+            <a href="add-task.html">Add Task</a>
+            <a href="about.html">About</a>
+        </nav>
+
+        <div class="hamburger" id="hamburger">&#9776;</div>
+    </header>
+
+    <div class="mobile-nav" id="mobileNav">
+        <a href="index.html">Dashboard</a>
+        <a href="add-task.html">Add Task</a>
+        <a href="about.html">About</a>
+    </div>
+
+    <main>
+        <section class="welcome-banner">
+            <h1>My Study Dashboard</h1>
+            <p>Stay on top of your assignments and deadlines.</p>
+        </section>
+
+        
+        <section class="stats-row">
+            <div class="stat-card">
+                <span class="stat-num" id="totalCount">0</span>
+                <span class="stat-label">Total Tasks</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-num" id="pendingCount">0</span>
+                <span class="stat-label">Pending</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-num" id="doneCount">0</span>
+                <span class="stat-label">Completed</span>
+            </div>
+        </section>
+
+        
+        <section class="filter-bar">
+            <label for="filterSelect">Filter by: </label>
+            <select id="filterSelect">
+                <option value="all">All Tasks</option>
+                <option value="pending">Pending</option>
+                <option value="done">Completed</option>
+                <option value="high">High Priority</option>
+                <option value="medium">Medium Priority</option>
+                <option value="low">Low Priority</option>
+            </select>
+
+            <label for="sortSelect">Sort by: </label>
+            <select id="sortSelect">
+                <option value="newest">Newest First</option>
+                <option value="oldest">Oldest First</option>
+                <option value="deadline">Deadline</option>
+            </select>
+        </section>
+
+        
+        <section class="task-section">
+            <h2>Your Tasks</h2>
+            <div id="taskList" class="task-list">
+                
+            </div>
+            <p id="emptyMsg" class="empty-msg">No tasks found. <a href="add-task.html">Add one!</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>StudyTrack &copy; 2024 | Built for learning purposes</p>
+    </footer>
+
+    <script src="app.js"></script>
+    <script src="dashboard.js"></script>
+</body>
+</html>

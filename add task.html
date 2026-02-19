@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="About StudyTrack - a student project">
+    <title>StudyTrack | About</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo"> StudyTrack</div>
+        <nav>
+            <a href="index.html">Dashboard</a>
+            <a href="add-task.html">Add Task</a>
+            <a href="about.html" class="active">About</a>
+        </nav>
+        <div class="hamburger" id="hamburger">&#9776;</div>
+    </header>
+
+    <div class="mobile-nav" id="mobileNav">
+        <a href="index.html">Dashboard</a>
+        <a href="add-task.html">Add Task</a>
+        <a href="about.html">About</a>
+    </div>
+
+    <main>
+        <section class="about-hero">
+            <h1>About StudyTrack</h1>
+            <p>A simple task manager built to help students stay organized.</p>
+        </section>
+
+        <section class="about-content">
+            <div class="about-card">
+                <h2>What is StudyTrack?</h2>
+                <p>
+                    StudyTrack is a lightweight study planner web app that helps you keep track of assignments,
+                    projects, and any other academic tasks. Everything is saved in your browser's local storage,
+                    so your data stays with you even after you refresh the page.
+                </p>
+                <p>
+                    You can add tasks with a deadline, priority level, and notes — then manage them from your
+                    dashboard. Mark tasks as done, delete ones you no longer need, and filter by priority or status.
+                </p>
+            </div>
+
+            <div class="about-card">
+                <h2>Why I Built This</h2>
+                <p>
+                    This was built as a final project for a web development course. The goal was to practise
+                    using HTML, CSS, and vanilla JavaScript together — specifically DOM manipulation, event
+                    handling, form validation, and localStorage.
+                </p>
+                <p>
+                    I chose a task manager because it covers all these requirements in a way that's actually
+                    useful day-to-day as a student.
+                </p>
+            </div>
+
+            <div class="about-card">
+                <h2>Technologies Used</h2>
+                <ul class="tech-list">
+                    <li>HTML5 — semantic markup and page structure</li>
+                    <li>CSS3 — Flexbox layout, media queries, custom properties</li>
+                    <li>JavaScript (Vanilla) — DOM manipulation, localStorage, form validation</li>
+                </ul>
+            </div>
+
+            <div class="about-card">
+                <h2>Known Issues / Limitations</h2>
+                <ul class="tech-list">
+                    <li>Data is only stored locally — no backend or account system</li>
+                    <li>Clearing browser data will delete all tasks</li>
+                    <li>No drag-and-drop reordering yet (maybe a future feature)</li>
+                </ul>
+            </div>
+        </section>
+
+        
+        <section class="about-stats">
+            <h2>Your Stats Right Now</h2>
+            <div class="stats-row">
+                <div class="stat-card">
+                    <span class="stat-num" id="aboutTotal">0</span>
+                    <span class="stat-label">Tasks Created</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-num" id="aboutDone">0</span>
+                    <span class="stat-label">Completed</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-num" id="aboutSubjects">0</span>
+                    <span class="stat-label">Subjects</span>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>StudyTrack &copy; 2024 | Built for learning purposes</p>
+    </footer>
+
+    <script src="app.js"></script>
+    <script src="about.js"></script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Add a new study task to StudyTrack">
+    <title>StudyTrack | Add Task</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo"> StudyTrack</div>
+        <nav>
+            <a href="index.html">Dashboard</a>
+            <a href="add-task.html" class="active">Add Task</a>
+            <a href="about.html">About</a>
+        </nav>
+        <div class="hamburger" id="hamburger">&#9776;</div>
+    </header>
+
+    <div class="mobile-nav" id="mobileNav">
+        <a href="index.html">Dashboard</a>
+        <a href="add-task.html">Add Task</a>
+        <a href="about.html">About</a>
+    </div>
+
+    <main>
+        <section class="form-section">
+            <h1>Add New Task</h1>
+            <p class="form-subtitle">Fill in the details below to add a task to your dashboard.</p>
+
+            
+            <div id="formMsg" class="form-msg hidden"></div>
+
+            <form id="taskForm" novalidate>
+
+                <div class="form-group">
+                    <label for="taskTitle">Task Title <span class="required">*</span></label>
+                    <input type="text" id="taskTitle" name="taskTitle" placeholder="e.g. Math Assignment Chapter 3" maxlength="100">
+                    <span class="error-text" id="titleError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="taskSubject">Subject <span class="required">*</span></label>
+                    <input type="text" id="taskSubject" name="taskSubject" placeholder="e.g. Mathematics" maxlength="60">
+                    <span class="error-text" id="subjectError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="taskDeadline">Deadline <span class="required">*</span></label>
+                    <input type="date" id="taskDeadline" name="taskDeadline">
+                    <span class="error-text" id="deadlineError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="taskPriority">Priority</label>
+                    <select id="taskPriority" name="taskPriority">
+                        <option value="low">Low</option>
+                        <option value="medium" selected>Medium</option>
+                        <option value="high">High</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="taskNotes">Notes (optional)</label>
+                    <textarea id="taskNotes" name="taskNotes" rows="4" placeholder="Any extra details about this task..." maxlength="300"></textarea>
+                    <span class="char-count" id="charCount">0 / 300</span>
+                </div>
+
+                <div class="form-buttons">
+                    <button type="submit" class="btn-primary">Save Task</button>
+                    <button type="reset" class="btn-secondary" id="clearBtn">Clear Form</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>StudyTrack &copy; 2024 | Built for learning purposes</p>
+    </footer>
+
+    <script src="app.js"></script>
+    <script src="form.js"></script>
+</body>
+</html>
