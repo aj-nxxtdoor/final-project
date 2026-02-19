@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+Documents.addEventListener('DOMContentLoaded', function() {
 
     const tasks = getTasks();
 
