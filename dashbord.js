@@ -118,7 +118,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // mark done/undone
         card.querySelector('.btn-done').addEventListener('click', function() {
             toggleDone(task.id);
-            renderPage(); 
+            renderPage();
         });
 
         // delete task
